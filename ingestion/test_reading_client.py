@@ -1,7 +1,7 @@
 import socket
 
 TCP_HOST = 'localhost'
-TCP_PORT = 9999
+TCP_PORT = 9992
 
 def start_client():
     """
