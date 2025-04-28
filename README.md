@@ -183,6 +183,49 @@ Each will contain **only one single CSV file**.
 ---
 
 
+***Section-3: Air Quality Analysis with Spark SQL***
+Objective
+Perform SQL-based analysis on the enhanced air quality dataset by:
+
+Registering dataframes as temporary SQL views
+
+Running SQL queries for key statistics and trends
+
+Generating summarized outputs for reporting
+***Prerequisites***
+Install required Python libraries:
+pip install -r requirements.txt
+
+***Java must be installed (for Spark):***
+sudo apt update
+sudo apt install default-jdk -y
+
+***Verify Java installation:***
+java -version
+readlink -f $(which java)
+
+***Set environment variables:***
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+***Commands to Run***
+### Run Section-3 SQL analysis script:
+
+ python3 section-3.py
+--> Outputs will be saved in the following location:
+    Output/Section3_SQL_Results/
+    --->Each SQL query result will be saved as a separate CSV file.
+
+
+
+    ![image](https://github.com/user-attachments/assets/6ba536bd-b8cd-4528-8fff-347cecb25b8b)
+
+    
+
+    
+
+
 
 
 
