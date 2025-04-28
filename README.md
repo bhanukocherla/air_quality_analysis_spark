@@ -230,23 +230,28 @@ export PATH=$JAVA_HOME/bin:$PATH
  --->Each SQL query result will be saved as a separate CSV file.
 
 ### Issues Faced & Solutions
-## 1. File Not Found Error
+# 1. File Not Found Error
 
 ***Issue: Path to enhanced Section-2 output CSV was incorrect.***
 
 Fix: Double-checked the file path and ensured Section-2 was run before Section-3.
 
-## 2. Java Gateway Exit Error***
+# 2. Java Gateway Exit Error
 
 ***Issue: Spark session failed to initialize due to missing Java.***
 
 Fix: Installed Java and properly set JAVA_HOME and PATH environment variables.
 
-## 3. AnalysisException during SQL Queries***
+# 3. AnalysisException during SQL Queries
 
 ***Issue: Some columns had unexpected names or types.***
 
 Fix: Explicitly casted columns where needed and validated schema using df.printSchema().
+
+**Output for section 3 output_section3_csv
+
+![image](https://github.com/user-attachments/assets/6ec228c5-146c-4798-ba68-38c5730e4483)
+
 
 
 
