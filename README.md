@@ -193,26 +193,38 @@ Running SQL queries for key statistics and trends
 
 Generating summarized outputs for reporting
 ## Prerequisites
-Install required Python libraries:
+```bash
 pip install -r requirements.txt
-
-## Java must be installed (for Spark):
+```
+# Install Java (Spark dependency)
+```bash
 sudo apt update
+```
+```bash
 sudo apt install default-jdk -y
+```
 
-## Verify Java installation:
+# Verify installation
+```bash
 java -version
+```
+```bash
 readlink -f $(which java)
-
-## Set environment variables:
+```
+- Set environment variables:
+```bash
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
+```
+
+---
 
 
 ## Commands to Run
 # Run Section-3 SQL analysis script:
-
+```bash
  python3 section-3.py
+
 --> Outputs will be saved in the following location:
     Output/Section3_SQL_Results/
  --->Each SQL query result will be saved as a separate CSV file.
