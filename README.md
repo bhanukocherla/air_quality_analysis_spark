@@ -183,7 +183,7 @@ Each will contain **only one single CSV file**.
 ---
 
 
-***Section-3: Air Quality Analysis with Spark SQL***
+### Section-3: Air Quality Analysis with Spark SQL
 Objective
 Perform SQL-based analysis on the enhanced air quality dataset by:
 
@@ -218,8 +218,6 @@ export PATH=$JAVA_HOME/bin:$PATH
     --->Each SQL query result will be saved as a separate CSV file.
 
 
-
-    ![image](https://github.com/user-attachments/assets/6ba536bd-b8cd-4528-8fff-347cecb25b8b)
 
     
 
