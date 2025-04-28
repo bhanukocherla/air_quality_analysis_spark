@@ -224,10 +224,29 @@ export PATH=$JAVA_HOME/bin:$PATH
 # Run Section-3 SQL analysis script:
 ```bash
  python3 section-3.py
-
+```
 --> Outputs will be saved in the following location:
     Output/Section3_SQL_Results/
  --->Each SQL query result will be saved as a separate CSV file.
+
+### Issues Faced & Solutions
+## 1. File Not Found Error
+
+***Issue: Path to enhanced Section-2 output CSV was incorrect.***
+
+Fix: Double-checked the file path and ensured Section-2 was run before Section-3.
+
+## 2. Java Gateway Exit Error***
+
+***Issue: Spark session failed to initialize due to missing Java.***
+
+Fix: Installed Java and properly set JAVA_HOME and PATH environment variables.
+
+## 3. AnalysisException during SQL Queries***
+
+***Issue: Some columns had unexpected names or types.***
+
+Fix: Explicitly casted columns where needed and validated schema using df.printSchema().
 
 
 
